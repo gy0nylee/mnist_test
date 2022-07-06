@@ -41,6 +41,7 @@ docker build --rm -t [image_name] .
 9. 테스트용 Docker container 생성
 ```bash
 docker run --name [container_name] --rm --gpus '"device=0,1"' --shm-size 8G -it \
- -v [server에서 불러올 path]:[container에서 구동할 path (WORKDIR에 지정한 경로)] e.g) /home/gy0ny/mnist:/mnist \
+ -v /home/gy0ny/mnist:/mnist \
+ # [server에서 불러올 path]:[container에서 구동할 path (WORKDIR에 지정한 경로)] 
  [image_name] /bin/bash/
 ```
