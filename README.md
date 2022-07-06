@@ -18,7 +18,7 @@ mkdir [dir_name]
 ```
 4. pycharm에서 해당 위치로 deployment 세팅 후 서버로 잘 복사되는지 확인
 
-=> tools-deployment-configuration에서 ssh, path 세팅 후 upload (ctrl+alt_shift+x)
+: tools-deployment-configuration에서 ssh, path 세팅 후 upload (ctrl+alt_shift+x)
 
 5. 필요 설치 환경 확인
 a. github repository에 requirements.txt나 Dockerfile이 존재하는지 확인
