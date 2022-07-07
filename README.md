@@ -36,8 +36,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 ```
 7. requirement.txt, Dockerfile 서버로 deploy
 8. Docker image build
+```bash
 docker build --rm -t [image_name] .
-
+```
 9. 테스트용 Docker container 생성
 ```bash
 docker run --name [container_name] --rm --gpus '"device=0,1"' --shm-size 8G -it \
