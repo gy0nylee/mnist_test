@@ -44,5 +44,5 @@ docker build --rm -t [image_name] .
 docker run --name [container_name] --rm --gpus '"device=0,1"' --shm-size 8G -it \
  -v /home/gy0ny/mnist:/mnist \
  # [server에서 불러올 path]:[container에서 구동할 path (WORKDIR에 지정한 경로)] 
- [image_name] /bin/bash/
+ [image_name] /bin/bash
 ```
